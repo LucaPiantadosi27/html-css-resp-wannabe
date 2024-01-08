@@ -130,6 +130,9 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
-@media screen and ( {
+@media screen and (max-widh:768px) {
+    .h1{
+        color: aquamarine;
+    }
     
 }
