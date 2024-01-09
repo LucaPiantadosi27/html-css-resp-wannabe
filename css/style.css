@@ -130,9 +130,58 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
-@media screen and (max-widh:768px) {
-    .h1{
-        color: aquamarine;
+/* imposto il container a larghezza fissa */
+
+ /* soluzione bonus */
+ .container {
+    max-width: 1140px;
+    width: auto;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
     }
-    
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+    .site-header {
+        padding: 0 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    /* Rimuovo padding da col */
+    .row .col {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Rimuovo  margin bottom di .steps */
+    .steps {
+        margin-bottom: 0;
+    }
+
+    .why-us {
+        /* compenso l'eliminazione del margin bottom della sezione antestante con il padding top */
+        padding-top: 40px;
+        /* compenso anche l'eliminazione del margin bottom */
+        padding-bottom: 48px;
+
+        margin-bottom: 0;
+        
+        /* cambio il back color alla sezione .why-us */
+        background-color: #222222;
+    }
+
+
 }
